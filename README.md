@@ -31,8 +31,26 @@ Quando um novo app é iniciado, ele deve ser alocado seguindo o seguinte algorit
 - Iniciar no primeiro servidor executando 0 (zero) apps.
 - Se todos os servidores estiverem rodando ao menos 1 app, o novo app deve ser iniciado no primeiro servidor rodando apenas 1 app.
 - Se todos os servidores estiverem rodando 2 apps, o novo app não deve ser iniciado.
+
+### O que acontece quando você clica em "Destruir"?
+
 - Quando um servidor for destruído, cada app alocado neste deve ser reiniciado em outro servidor no cluster seguindo o algoritmo citado anteriormente.
 - Se não houver capacidade para reiniciar os app em outro servidor, eles devem ser encerrados.
+
+Exemplo:
+
+```
+servidor 1 contendo Hadoop e Rails
+servidor 2 contendo Hadoop
+servidor 3 contendo Chronos
+```
+
+Se clicar em destruir o resultado esperado será
+
+```
+servidor 1 contendo Hadoop e Rails
+servidor 2 contendo Hadoop Chronos
+```
 
 ## Crédito extra
 
