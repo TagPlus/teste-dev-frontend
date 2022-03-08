@@ -5,13 +5,14 @@ Crie uma interface de usuário demonstrando o básico necessário para simulaç�
 ## Design e Funcionalidades
 
 Você pode ver o mockup da interface [aqui](./mockup.png).  
-Sua interface deve possuir uma implementação básica que reflita o design com a maior fidelidade possível.
 
 Cada bloco cinza abaixo de "Quadro de Servidores" representa um servidor no cluster.  
 O cluster deve ser iniciado com 4 servidores.
 
-Priorize funcionalidade sobre perfeição do design.  
-Isto é uma funcionalidade de demonstração e sem o funcionamento básico não importa o quão bonito está.
+**Priorize funcionalidade sobre perfeição do design.  
+Isto é uma funcionalidade de demonstração e sem o funcionamento básico não importa o quão bonito está.**
+
+Sua interface deve possuir uma implementação básica que reflita o design com a maior fidelidade possível.
 
 ## Interações
 
